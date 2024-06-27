@@ -1,7 +1,10 @@
+import { UserButton } from "@clerk/nextjs";
 import React from "react";
 
 function Dashboard() {
-  return <div>This is your Dashboard</div>;
+  return <div>
+    <UserButton/>This is your Dashboard
+    </div>;
 }
 
 export default Dashboard;
