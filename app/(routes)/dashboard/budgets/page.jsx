@@ -7,7 +7,7 @@ function budgets() {
       <h2 className="font-bold text-3xl">My Budgets</h2>
       <BudgetList />
     </div>
-  )
+  );
 }
 
 export default budgets;
