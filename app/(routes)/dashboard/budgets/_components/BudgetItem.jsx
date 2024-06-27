@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 function BudgetItem({ budget }) {
+  /* To track budget using progress bar  */
   const calculateProgressPerc = () => {
     const perc = (budget.totalSpend / budget.amount) * 100;
     return perc.toFixed(2);
@@ -22,16 +23,16 @@ function BudgetItem({ budget }) {
               </h2>
             </div>
           </div>
-          <h2 className="font-bold text-primary text-lg">${budget?.amount}</h2>
+          <h2 className="font-bold text-primary text-lg">₦{budget?.amount}</h2>
         </div>
 
         <div className="mt-5">
           <div className="flex items-center justify-between mb-3">
             <h2 className="text-xs text-slate-400">
-              ${budget.totalSpend ? budget.totalSpend : 0} Spend
+            ₦{budget.totalSpend ? budget.totalSpend : 0} Spend
             </h2>
             <h2 className="text-xs text-slate-400">
-              ${budget.amount - budget.totalSpend} Remaining
+            ₦{budget.amount - budget.totalSpend} Remaining
             </h2>
           </div>
           <div className="w-full bg-slate-300 h-2 rounded-full">

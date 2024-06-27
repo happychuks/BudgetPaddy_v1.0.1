@@ -38,7 +38,7 @@ function CreateBudget({ refreshData }) {
       .returning({ insertedId: Budgets.id });
 
     if (result) {
-      //refreshData();
+      refreshData();
       toast("New Budget Created");
     }
   };
@@ -80,10 +80,10 @@ function CreateBudget({ refreshData }) {
                   />
                 </div>
                 <div className="mt-2">
-                  <h2 className="text-black font-medium my-1">Budget Amount</h2>
+                  <h2 className="text-black font-medium my-1">Budget Amount (₦)</h2>
                   <Input
                     type="number"
-                    placeholder="e.g. 5000$"
+                    placeholder="e.g. 5000"
                     onChange={(e) => setAmount(e.target.value)}
                   />
                 </div>
