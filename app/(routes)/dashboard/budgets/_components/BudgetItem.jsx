@@ -29,7 +29,7 @@ function BudgetItem({ budget }) {
         <div className="mt-5">
           <div className="flex items-center justify-between mb-3">
             <h2 className="text-xs text-slate-400">
-            ₦{budget.totalSpend ? budget.totalSpend : 0} Spend
+            ₦{budget.totalSpend ? budget.totalSpend : 0} Spent
             </h2>
             <h2 className="text-xs text-slate-400">
             ₦{budget.amount - budget.totalSpend} Remaining

@@ -1,7 +1,7 @@
 import React from "react";
 
-function expenses() {
-  return <div>My Expenses</div>;
+function Expenses() {
+  return <div>This is your Expenses</div>;
 }
 
-export default expenses;
+export default Expenses;
