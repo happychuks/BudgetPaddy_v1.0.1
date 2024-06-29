@@ -99,7 +99,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Author
 
-BudgetPaddy_v1.0.1
+Check the deployed application here [BudgetPaddy_v1.0.1](https://budgetpaddy.vercel.app/)
 
-- Happy Felix Chukwuma - [Github](https://github.com/happychuks) / [Twitter](https://twitter.com/Chukwuma__Happy) / [LinkedIn](https://www.linkedin.com/in/happyfelixchukwuma/)
+- Happy Felix Chukwuma - [Github](https://github.com/happychuks) / [Twitter](https://twitter.com/code_with_Felix) / [LinkedIn](https://www.linkedin.com/in/happyfelixchukwuma/)
 
