@@ -1,22 +1,33 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { UserButton, useUser, SignInButton } from "@clerk/nextjs";
-import { Link } from "next/link";
+import { UserButton, useUser } from "@clerk/nextjs";
+import Link from "next/link";
+import { Button } from "../../components/ui/button";
+import { useRouter } from "next/navigation";
 
-export default function Header() {
-  const { isSignedIn, isLoaded, user } = useUser();
+function Header() {
+  const { user, isSignedIn } = useUser();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (isSignedIn) {
+      router.push("/dashboard");
+    }
+  }, [isSignedIn, router]);
 
   return (
-    <div className="p-5 flex justify-between items-center border shadow-sm">
-      <Image src="/logo.svg" alt="BudgetPaddy Logo" width={100} height={100} />
-      {isSignedIn ? 
-        <UserButton /> : 
-        <SignInButton>
-          <Button>Get Started</Button>
-          </SignInButton>    
-      }
+    <div className="p-3 flex justify-between items-center border shadow-sm">
+      <Image src={"./logo.svg"} alt="BudgetPaddylogo" width={80} height={50} />
+      {isSignedIn ? (
+        <UserButton />
+      ) : (
+        <Link href={"/sign-in"}>
+          <Button>SIGN IN</Button>
+        </Link>
+      )}
     </div>
   );
 }
+
+export default Header;

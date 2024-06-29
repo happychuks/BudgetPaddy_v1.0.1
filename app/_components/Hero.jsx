@@ -16,7 +16,7 @@ function Hero() {
             </h1>
 
             <p className="mt-4 sm:text-xl/relaxed">
-              Track your expenses, Say NO to Sapa
+              Keeping your finances in check is a good way to live a financially free life. BudgetPaddy helps you keep track of your Finances and manage your expenses.
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -30,9 +30,9 @@ function Hero() {
           </div>
         </div>
         <Image
-          src="/dashboard.png"
+          src="/mainHero.png"
           alt="dashboard"
-          width={1000}
+          width={1200}
           height={700}
           className="-mt-9 rounded-xl border-2"
         />
