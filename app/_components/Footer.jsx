@@ -5,7 +5,7 @@ function Footer() {
     <footer class="bg-gray-100">
   <div class="mx-auto max-w-5xl px-4 py-5 sm:px-6 lg:px-8">
     <div class="flex justify-center text-teal-600">
-      <h1>BudgetPaddy</h1>
+      <h1 className='text-primary'>BudgetPaddy</h1>
     </div>
 
     <p class="mx-auto mt-1 max-w-md text-center leading-relaxed text-gray-500">
@@ -61,18 +61,32 @@ function Footer() {
         </a>
       </li>   
       
+      <li>
+        <a
+          href="https://www.linkedin.com/in/happyfelixchukwuma/"
+          rel="noreferrer"
+          target="_blank"
+          class="text-gray-700 transition hover:text-gray-700/75"
+        >
+          <span class="sr-only">LinkedIn</span>
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#8bb7f0" d="M1.5 1.5H14.5V14.5H1.5z"></path><path fill="#4e7ab5" d="M14,2v12H2V2H14 M15,1H1v14h14V1L15,1z"></path><path fill="#fff" d="M3 7.036L5.075 7.036 5.075 11.159 5.075 13 3 13zM4.037 6L4.037 6C3.415 6 3 5.559 3 5.015s.415-.959 1.037-.959S5.049 4.47 5.075 5.015C5.075 5.559 4.686 6 4.037 6zM12 13H9.952c0 0 0-3.098 0-3.328S9.926 8.648 9.056 8.648c-.768 0-.896.742-.896 1.024s0 3.328 0 3.328H6.112V7.112H8.16v.794c0 0 .41-.794 1.613-.794 1.229 0 2.227.845 2.227 2.56V13z"></path>
+</svg>
+        </a>
+      </li>   
     </ul>
 
     
   </div>
-  
+  <div className='pb-5'>
+  <p style={{ textAlign: 'center' }}>
+  Copyright &#169;
+  {new Date().getFullYear()}&nbsp; 
+  <br />
+  All Rights Reserved.
+</p></div>
 </footer>
   )
 }
-<p style={{ textAlign: 'center' }}>
-  Copyright &#169;
-  {new Date().getFullYear()}&nbsp; 
-  BudgetPaddy <br />
-  All Rights Reserved.
-</p>
+
 export default Footer

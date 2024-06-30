@@ -7,7 +7,7 @@ import Footer from "./_components/Footer";
 export default function Home() {
   return (
     <div>
-      <Header />
+      <Header className="fixed top-0 left-0 w-full z-50"/>
       <Hero />
       <Footer/>
     </div>

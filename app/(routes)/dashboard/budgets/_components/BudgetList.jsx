@@ -9,7 +9,6 @@ import { useUser } from "@clerk/nextjs";
 import { Budgets, expenses } from "../../../../../utils/schema";
 import { db } from "../../../../../utils/dbConfig";
 function BudgetList() {
-    
   const [budgetList, setBudgetList] = useState([]);
 
   /**
@@ -20,9 +19,9 @@ function BudgetList() {
     user && getBudgetList();
   }, [user]);
 
-/**
- * Get the list of budgets for the logged in user
- */
+  /**
+   * Get the list of budgets for the logged in user
+   */
   const getBudgetList = async () => {
     const result = await db
       .select({

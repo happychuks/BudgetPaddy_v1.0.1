@@ -46,11 +46,12 @@ function page() {
     setExpensesList(result);
   };
   return (
-    <div className="p-5">
-      <h2 className="font-bold text-lg mt-5">Latest Expenses</h2>
+    <div className="p-5 md:p-2 sm:p-1">
+      <h2 className="font-bold text-lg mt-5 md:text-sm sm:text-xs">Latest Expenses</h2>
       <ExpenseListTable
         expensesList={expensesList}
         refreshData={() => getBudgetList()}
+        className="md:w-full sm:w-full"
       />
     </div>
   );

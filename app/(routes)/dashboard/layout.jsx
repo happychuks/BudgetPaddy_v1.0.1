@@ -22,12 +22,12 @@ function DashboardLayout({ children }) {
       .from(Budgets)
       .where(eq(Budgets.createdBy, user?.primaryEmailAddress?.emailAddress));
 
-    console.log(result);
-    
+    //console.log(result);
+
     //Redirect to budgets page if user has no budgets
-    if (result?.length == 0) {
+  /*   if (result?.length === 0) {
       router.replace("/dashboard/budgets");
-    }
+    } */
   };
 
   return (

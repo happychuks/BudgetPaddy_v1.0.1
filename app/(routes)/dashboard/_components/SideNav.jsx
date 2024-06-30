@@ -1,11 +1,6 @@
 "use client";
 import { UserButton } from "@clerk/nextjs";
-import {
-  LayoutGrid,
-  PiggyBank,
-  ReceiptText,
-  X,
-} from "lucide-react";
+import { LayoutGrid, PiggyBank, ReceiptText, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -39,7 +34,7 @@ function SideNav({ isSideNavOpen, onClose }) {
     <div className="h-screen p-5 border shadow-sm bg-white">
       <div className="flex justify-between items-center">
         <Image src={"/logo.svg"} alt="logo" width={160} height={100} />
-        <button className="md:hidden p-2" onClick={onClose}>
+        <button className="md:hidden sm:block p-2 " onClick={onClose}>
           <X />
         </button>
       </div>
