@@ -23,31 +23,36 @@ function Header() {
           src={"./logo.svg"}
           alt="BudgetPaddylogo"
           width={80}
-          height={50}
+          height={50}         
         />
-        <div className="text-lg font-bold text-primary"><a href="./">BudgetPaddy</a></div>
+        <div className="text-xs md:text-lg font-bold text-primary"><a href="./">BudgetPaddy</a></div>
       </div>
-      <div className="flex items-center gap-4 text-primary">
+      <div className="hidden md:flex items-center gap-4 text-primary">
         <Link href={"./"} className="text-sm font-bold">
-          Home
+          HOME
         </Link>
         <Link href={"./About"} className="text-sm font-bold">
-          About
+          ABOUT
         </Link>
         <Link href={"/Contact"} className="text-sm font-bold">
-          Contact
+          CONTACT
         </Link>
         <Link href={"/Documentation"} className="text-sm font-bold">
-          Documentation
+          DOCUMENTATION
         </Link>
       </div>
+      <div className="flex gap-2">
       {isSignedIn ? (
         <UserButton />
       ) : (
         <Link href={"/sign-in"}>
           <Button>SIGN IN</Button>
         </Link>
+        
       )}
+      <Link href={"/sign-up"}>
+          <Button >SIGN UP</Button>
+        </Link></div>
     </div>
   );
 }

@@ -8,15 +8,17 @@ function Hero() {
         <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex">
           <div className="mx-auto max-w-xl text-center">
             <h1 className="text-3xl font-extrabold sm:text-5xl">
-              Track you Finances
+              Track your Finances
               <strong className="font-extrabold text-primary sm:block">
                 {" "}
-                Manage your budget{" "}
+                Manage your Budget{" "}
               </strong>
             </h1>
 
             <p className="mt-4 sm:text-xl/relaxed">
-              Keeping your finances in check is a good way to live a financially free life. BudgetPaddy helps you keep track of your Finances and manage your expenses.
+              Keeping your finances in check is a good way to live a financially
+              free life. BudgetPaddy helps you keep track of your Finances and
+              manage your expenses.
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -34,7 +36,7 @@ function Hero() {
           alt="dashboard"
           width={1200}
           height={700}
-          className="-mt-9 rounded-xl border-2"
+          className="-mt-9 rounded-xl border-2 md:w-full sm:w-full md:h-auto sm:h-auto"
         />
       </section>
     </div>

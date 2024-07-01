@@ -3,7 +3,7 @@ import React from "react";
 export default function About() {
   return (
     <div className="max-w-md mx-auto p-4 pt-6 md:p-8 md:pt-12 items-center flex-col text-center">
-      <h1 className="text-3xl font-bold mb-4">About Us</h1>
+      <h1 className="text-3xl font-bold mb-4 text-blue-600">About Us</h1>
       <p className="text-xl mb-6">
         Welcome to BudgetPaddy! We're a team of passionate individuals dedicated
         to helping you manage your finances effectively.
