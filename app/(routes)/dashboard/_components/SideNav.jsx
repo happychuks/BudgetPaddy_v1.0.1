@@ -34,9 +34,8 @@ function SideNav({ isSideNavOpen, onClose }) {
     <div className="h-screen p-5 border shadow-sm bg-white">
       <div className="flex justify-between items-center">
         <Image src={"/logo.svg"} alt="logo" width={160} height={100} />
-        <button className="md:hidden sm:block p-2 " onClick={onClose}>
-          <X />
-        </button>
+        <div className="text-xs md:text-lg font-bold text-primary"><a href="./">BudgetPaddy</a></div>
+        
       </div>
 
       <div className="mt-5">
