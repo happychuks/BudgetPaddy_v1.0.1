@@ -9,6 +9,7 @@ const outfit = Outfit({ subsets: ["latin"] });
 export const metadata = {
   title: "BudgetPaddy",
   description: "Budget and Expense tracker",
+  image: "./BudgetPaddy-logo.png"
 };
 
 export default function RootLayout({ children }) {
