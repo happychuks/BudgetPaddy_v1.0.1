@@ -81,7 +81,7 @@ function CreateBudget({ refreshData }) {
                 </div>
                 <div className="mt-2">
                   <h2 className="text-black font-medium my-1">
-                    Budget Amount (₦)
+                    Budget Amount
                   </h2>
                   <Input
                     type="number"

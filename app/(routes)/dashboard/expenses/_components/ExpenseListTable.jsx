@@ -29,7 +29,12 @@ function ExpenseListTable({ expensesList, refreshData }) {
       {expensesList.map((expense, index) => (
         <div key={index} className="grid grid-cols-4 bg-slate-100 p-2">
           <h2>{expense.name}</h2>
-          <h2>{expense.amount}</h2>
+          <h2>
+            {new Intl.NumberFormat("en-NG", {
+              minimumFractionDigits: 2,
+              useGrouping: true,
+            }).format(expense.amount)}
+          </h2>
           <h2>{expense.createdAt}</h2>
           <h2>
             <Trash
