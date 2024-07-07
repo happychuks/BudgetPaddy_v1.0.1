@@ -1,7 +1,14 @@
-# Budget / Expense Tracker Website
+# BudgetPaddy 
+## Budget / Expense Tracker Website
+![budgetpaddy logo](./public/BudgetPaddy-logo.png)
+
+## Introduction
 This project is a Budget and Expense Tracker Website built using [Next.js](https://nextjs.org/) bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), Drizzle ORM, PostgreSQL, and Tailwind CSS. The application allows users to create budgets, add expenses, and visualize their spending with a bar chart.
 
-# Features
+## Features
+**User Profile:**
+Users can create profile using Google OAuth or via sign-up form
+
 **Budget Management:** 
 Users can create budgets for different expenses.
 
@@ -14,7 +21,7 @@ View all expenses or filter by specific budgets.
 **Data Visualization:** 
 A bar chart is provided for visual representation of expenses within each budget.
 
-# Technologies Used
+## Technologies Used
 **Next.js:** React framework for building server-side rendered applications.
 
 **Drizzle ORM:** TypeScript ORM for PostgreSQL, providing a type-safe data access layer.
@@ -25,8 +32,7 @@ A bar chart is provided for visual representation of expenses within each budget
 
 **Clerk:** [Clerk](https://clerk.com/) is a User Management Platform 
 
-## Getting Started
-**Installation**
+## Installation
 
 **1) Clone the repository:**
 ```bash
@@ -43,7 +49,7 @@ npm install #or yarn install
 Create a .env.local file in the root directory.
 
 Add the following environment variables:
-
+```
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 
 CLERK_SECRET_KEY=
@@ -53,25 +59,26 @@ NEXT_PUBLIC_CLERK_SIGN_IN_URL=
 NEXT_PUBLIC_CLERK_SIGN_UP_URL=
 
 NEXT_PUBLIC_DATABASE_URL=
+```
 
 **4) Run database migrations:**
-
+```bash
 npm run db:push
 
 npm run db:studio
-
+```
 **5) Start the development server:**
-
+```bash
 npm run dev
 **or**
 yarn dev
-
+```
 **6) Open your browser and navigate to:**
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-# Usage
-
+## Usage
+Check the deployed application here [BudgetPaddy_v1.0.1](https://budgetpaddy.vercel.app/)
 - Create budgets for various expenses.
 
 - Add expenses to each budget.
@@ -99,7 +106,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Author
 
-Check the deployed application here [BudgetPaddy_v1.0.1](https://budgetpaddy.vercel.app/)
-
 - Happy Felix Chukwuma - [Github](https://github.com/happychuks) / [Twitter](https://twitter.com/code_with_Felix) / [LinkedIn](https://www.linkedin.com/in/happyfelixchukwuma/)
 
+## Contributing 
+There are no contributors yet. Want to be the first ?
+
+If you want to contribute to this project, please read the [contribution guide](./CONTRIBUTING.md).
+
+## Licensing
+View License information [here](./LICENSE)
